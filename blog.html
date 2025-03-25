@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Sweet Delights Bakery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .font-playfair { font-family: 'Playfair Display', serif; }
+        .font-poppins { font-family: 'Poppins', sans-serif; }
+    </style>
+</head>
+<body class="font-poppins">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <div class="text-2xl font-playfair font-bold text-amber-800">
+                        <i class="fas fa-bread-slice text-amber-600 mr-2"></i>
+                        Sweet Delights
+                    </div>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-amber-900 hover:text-amber-600 px-3 py-2 font-medium">Home</a>
+                    <a href="about.html" class="text-amber-900 hover:text-amber-600 px-3 py-2 font-medium">About</a>
+                    <a href="menu.html" class="text-amber-900 hover:text-amber-600 px-3 py-2 font-medium">Menu</a>
+                    <a href="contact.html" class="text-amber-900 hover:text-amber-600 px-3 py-2 font-medium">Contact</a>
+                    <a href="blog.html" class="text-amber-900 hover:text-amber-600 px-3 py-2 font-medium">Blog</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button">
+                        <i class="fas fa-bars text-amber-800 text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="mobile-menu hidden md:hidden pb-4">
+                <a href="index.html" class="block text-amber-900 hover:text-amber-600 px-3 py-2 font-medium">Home</a>
+                <a href="about.html" class="block text-amber-900 hover:text-amber-600 px-3 py-2 font-medium">About</a>
+                <a href="menu.html" class="block text-amber-900 hover:text-amber-600 px-3 py-2 font-medium">Menu</a>
+                <a href="contact.html" class="block text-amber-900 hover:text-amber-600 px-3 py-2 font-medium">Contact</a>
+                <a href="blog.html" class="block text-amber-900 hover:text-amber-600 px-3 py-2 font-medium">Blog</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Hero Section -->
+    <section class="pt-32 pb-20 bg-amber-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-playfair font-bold text-amber-900 mb-6">
+                    Our Blog
+                </h1>
+                <p class="text-lg md:text-xl text-amber-800 mb-8">
+                    Stories, recipes, and updates from our bakery
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Featured Post -->
+            <div class="mb-16">
+                <div class="bg-white rounded-lg shadow-xl overflow-hidden">
+                    <div class="md:flex">
+                        <div class="md:w-1/2">
+                            <div class="h-96 bg-[url('https://images.pexels.com/photos/1998920/pexels-photo-1998920.jpeg')] bg-cover bg-center"></div>
+                        </div>
+                        <div class="md:w-1/2 p-8">
+                            <div class="uppercase tracking-wide text-sm text-amber-600 font-semibold">Featured Post</div>
+                            <h2 class="mt-2 text-3xl font-playfair font-bold text-amber-900">The Art of Sourdough: A Baker's Guide</h2>
+                            <p class="mt-4 text-amber-800">Learn the secrets of making perfect sourdough bread at home. From starter maintenance to scoring techniques, we'll guide you through the process step by step.</p>
+                            <div class="mt-4 flex items-center">
+                                <img class="h-10 w-10 rounded-full" src="https://images.pexels.com/photos/3814446/pexels-photo-3814446.jpeg" alt="Author">
+                                <div class="ml-4">
+                                    <div class="text-sm font-medium text-amber-900">Sarah Johnson</div>
+                                    <div class="text-sm text-amber-600">July 15, 2023 • 8 min read</div>
+                                </div>
+                            </div>
+                            <a href="#" class="mt-6 inline-block bg-amber-600 text-white px-6 py-2 rounded-full hover:bg-amber-700 transition duration-300">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Regular Posts Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Post 1 -->
+                <article class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="h-48 bg-[url('https://images.pexels.com/photos/1291712/pexels-photo-1291712.jpeg')] bg-cover bg-center"></div>
+                    <div class="p-6">
+                        <div class="text-amber-600 text-sm font-semibold">Recipes</div>
+                        <h3 class="mt-2 text-xl font-playfair font-bold text-amber-900">Classic French Croissant Recipe</h3>
+                        <p class="mt-3 text-amber-800">Master the art of making buttery, flaky croissants with our detailed recipe and tips.</p>
+                        <div class="mt-4 flex items-center">
+                            <div class="text-sm text-amber-600">June 28, 2023 • 5 min read</div>
+                        </div>
+                        <a href="#" class="mt-4 inline-block text-amber-600 hover:text-amber-700">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- Post 2 -->
+                <article class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="h-48 bg-[url('https://images.pexels.com/photos/205961/pexels-photo-205961.jpeg')] bg-cover bg-center"></div>
+                    <div class="p-6">
+                        <div class="text-amber-600 text-sm font-semibold">Tips & Tricks</div>
+                        <h3 class="mt-2 text-xl font-playfair font-bold text-amber-900">5 Tips for Perfect Pastries</h3>
+                        <p class="mt-3 text-amber-800">Learn the secrets to creating beautiful and delicious pastries every time.</p>
+                        <div class="mt-4 flex items-center">
+                            <div class="text-sm text-amber-600">June 20, 2023 • 4 min read</div>
+                        </div>
+                        <a href="#" class="mt-4 inline-block text-amber-600 hover:text-amber-700">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- Post 3 -->
+                <article class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="h-48 bg-[url('https://images.pexels.com/photos/1721932/pexels-photo-1721932.jpeg')] bg-cover bg-center"></div>
+                    <div class="p-6">
+                        <div class="text-amber-600 text-sm font-semibold">Behind the Scenes</div>
+                        <h3 class="mt-2 text-xl font-playfair font-bold text-amber-900">A Day in Our Bakery</h3>
+                        <p class="mt-3 text-amber-800">Experience what goes into creating our delicious treats every morning.</p>
+                        <div class="mt-4 flex items-center">
+                            <div class="text-sm text-amber-600">June 15, 2023 • 6 min read</div>
+                        </div>
+                        <a href="#" class="mt-4 inline-block text-amber-600 hover:text-amber-700">Read More →</a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Newsletter Subscription -->
+            <div class="mt-20 bg-amber-50 rounded-lg shadow-lg p-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-playfair font-bold text-amber-900 mb-4">Subscribe to Our Newsletter</h2>
+                    <p class="text-amber-800 mb-6">Get the latest recipes, tips, and bakery updates delivered to your inbox.</p>
+                    <form class="max-w-md mx-auto">
+                        <div class="flex gap-4">
+                            <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-2 rounded-full border border-amber-200 focus:outline-none focus:ring-2 focus:ring-amber-500">
+                            <button type="submit" class="bg-amber-600 text-white px-6 py-2 rounded-full hover:bg-amber-700 transition duration-300">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-amber-900 text-amber-100 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-playfair font-bold text-xl mb-4">Sweet Delights</h3>
+                    <p class="text-sm">Bringing you the finest baked goods since 2023.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="hover:text-amber-300">About Us</a></li>
+                        <li><a href="menu.html" class="hover:text-amber-300">Our Menu</a></li>
+                        <li><a href="contact.html" class="hover:text-amber-300">Contact</a></li>
+                        <li><a href="blog.html" class="hover:text-amber-300">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contact Info</h4>
+                    <ul class="space-y-2">
+                        <li><i class="fas fa-map-marker-alt mr-2"></i>123 Bakery Street</li>
+                        <li><i class="fas fa-phone mr-2"></i>(555) 123-4567</li>
+                        <li><i class="fas fa-envelope mr-2"></i>info@sweetdelights.com</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-amber-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-amber-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-amber-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="hover:text-amber-300"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-amber-800 mt-8 pt-8 text-center">
+                <p>&copy; 2023 Sweet Delights Bakery. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu JavaScript -->
+    <script>
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
