@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Sweet Delights Bakery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .font-playfair { font-family: 'Playfair Display', serif; }
+        .font-poppins { font-family: 'Poppins', sans-serif; }
+    </style>
+</head>
+<body class="font-poppins">
+    <!-- Navigation (Same as index.html) -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <div class="text-2xl font-playfair font-bold text-amber-800">
+                        <i class="fas fa-bread-slice text-amber-600 mr-2"></i>
+                        Sweet Delights
+                    </div>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-amber-900 hover:text-amber-600 px-3 py-2 font-medium">Home</a>
+                    <a href="about.html" class="text-amber-900 hover:text-amber-600 px-3 py-2 font-medium">About</a>
+                    <a href="menu.html" class="text-amber-900 hover:text-amber-600 px-3 py-2 font-medium">Menu</a>
+                    <a href="contact.html" class="text-amber-900 hover:text-amber-600 px-3 py-2 font-medium">Contact</a>
+                    <a href="blog.html" class="text-amber-900 hover:text-amber-600 px-3 py-2 font-medium">Blog</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button">
+                        <i class="fas fa-bars text-amber-800 text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="mobile-menu hidden md:hidden pb-4">
+                <a href="index.html" class="block text-amber-900 hover:text-amber-600 px-3 py-2 font-medium">Home</a>
+                <a href="about.html" class="block text-amber-900 hover:text-amber-600 px-3 py-2 font-medium">About</a>
+                <a href="menu.html" class="block text-amber-900 hover:text-amber-600 px-3 py-2 font-medium">Menu</a>
+                <a href="contact.html" class="block text-amber-900 hover:text-amber-600 px-3 py-2 font-medium">Contact</a>
+                <a href="blog.html" class="block text-amber-900 hover:text-amber-600 px-3 py-2 font-medium">Blog</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Hero Section -->
+    <section class="pt-32 pb-20 bg-amber-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-playfair font-bold text-amber-900 mb-6">
+                    Our Story
+                </h1>
+                <p class="text-lg md:text-xl text-amber-800 mb-8 max-w-3xl mx-auto">
+                    Discover the passion and tradition behind every creation at Sweet Delights Bakery
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="h-96 bg-[url('https://images.pexels.com/photos/1070880/pexels-photo-1070880.jpeg')] bg-cover bg-center rounded-lg shadow-xl"></div>
+                <div>
+                    <h2 class="text-3xl font-playfair font-bold text-amber-900 mb-6">A Family Tradition</h2>
+                    <p class="text-amber-800 mb-4">
+                        Founded in 2023, Sweet Delights Bakery began with a simple mission: to bring the authentic taste of homemade baked goods to our community. Our recipes have been passed down through generations, each one telling a story of tradition and love.
+                    </p>
+                    <p class="text-amber-800 mb-4">
+                        Every morning, our master bakers arrive before dawn to prepare the day's fresh offerings. Using only the finest ingredients and time-honored techniques, we create breads, pastries, and cakes that delight both the eye and the palate.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Values Section -->
+    <section class="py-20 bg-amber-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-playfair font-bold text-center text-amber-900 mb-12">Our Values</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-heart text-3xl text-amber-600"></i>
+                    </div>
+                    <h3 class="font-playfair font-bold text-xl text-amber-900 mb-4">Made with Love</h3>
+                    <p class="text-amber-700">Every item we create is made with passion and care, ensuring the highest quality in every bite.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-leaf text-3xl text-amber-600"></i>
+                    </div>
+                    <h3 class="font-playfair font-bold text-xl text-amber-900 mb-4">Fresh Ingredients</h3>
+                    <p class="text-amber-700">We source only the finest, freshest ingredients from local suppliers whenever possible.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-users text-3xl text-amber-600"></i>
+                    </div>
+                    <h3 class="font-playfair font-bold text-xl text-amber-900 mb-4">Community First</h3>
+                    <p class="text-amber-700">We're proud to be part of our local community and strive to give back whenever we can.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as index.html) -->
+    <footer class="bg-amber-900 text-amber-100 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-playfair font-bold text-xl mb-4">Sweet Delights</h3>
+                    <p class="text-sm">Bringing you the finest baked goods since 2023.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="hover:text-amber-300">About Us</a></li>
+                        <li><a href="menu.html" class="hover:text-amber-300">Our Menu</a></li>
+                        <li><a href="contact.html" class="hover:text-amber-300">Contact</a></li>
+                        <li><a href="blog.html" class="hover:text-amber-300">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contact Info</h4>
+                    <ul class="space-y-2">
+                        <li><i class="fas fa-map-marker-alt mr-2"></i>123 Bakery Street</li>
+                        <li><i class="fas fa-phone mr-2"></i>(555) 123-4567</li>
+                        <li><i class="fas fa-envelope mr-2"></i>info@sweetdelights.com</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-amber-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-amber-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-amber-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="hover:text-amber-300"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-amber-800 mt-8 pt-8 text-center">
+                <p>&copy; 2023 Sweet Delights Bakery. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu JavaScript -->
+    <script>
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
